@@ -3,7 +3,7 @@ using Microsoft.Extensions.Configuration;
 
 namespace ECommPostgresDemo;
 
-public class ConfigurationHelper
+public sealed class ConfigurationHelper
 {
     private static readonly IConfigurationBuilder _configBuilder;
     public static IConfiguration Config => _configBuilder.Build();
